@@ -1,0 +1,390 @@
+@font-face {
+  src: url('../fonts/GmarketSansLight.otf');
+  font-family: 'GmarketSansLight';
+}
+
+@font-face {
+  src: url('../fonts/GmarketSansMedium.otf');
+  font-family: 'GmarketSansMedium';
+}
+
+@font-face {
+  src: url('../fonts/GmarketSansBold.otf');
+  font-family: 'GmarketSansBold';
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'GmarketSansMedium';
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 0 0.5px 3px #999;
+  width: 100%;
+  height: 12vh;
+  min-height: 80px;
+  z-index: 2;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.down {
+  background-color:white;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.navbar>a{
+  position: absolute;
+  left: 20%;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav{
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  right: 20%;
+}
+
+.nav a{
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  color:#777;
+}
+
+.area{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* slide */
+.slide{
+  position: fixed;
+  right: 50px;
+  top: 45%;
+  z-index: 1;
+}
+
+.slide a{
+  display: block;
+}
+
+.slide img{
+  width: 12px;
+  margin: 5px 0;
+}
+
+/* main */
+#main{
+  height: 120vh;
+  background-color: #F6F5F5;
+  background-image: url('../images/아이폰 목업.png');
+  background-repeat: no-repeat;
+  background-size: 27%;
+  background-position: 80% 400%;
+  align-items: center;
+}
+
+.main-text-area{
+  min-width: 510px;
+  position: absolute;
+  left: 18%;
+}
+
+.main-text1{
+  font-family: 'GmarketSansLight';
+  font-size: 38px;
+  margin: 0;
+}
+
+.main-text2{
+  font-family: 'GmarketSansBold';
+  font-size: 88px;
+  color: #323232;
+  margin: 0;
+}
+
+.main-text-area a{
+  position: absolute;
+}
+
+.button-border{
+  display: inline-block;
+  border: none;
+  background-color: none;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.button-border:hover{
+  display: inline-block;
+  border: 1px solid black;
+  background-color: none;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.button{
+  display: inline-block;
+  border: none;
+  background-color: #F0B744;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: black;
+  text-align: center;
+  font-family: 'GmarketSansBold';
+  font-size: 22px;
+}
+
+.button p{
+  margin: 15px 0;
+}
+
+/* first */
+#first {
+  background-image: url('../images/웹 배경 길게.png');
+  position: relative;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.first-area-first{
+  display: inline-block;
+  width: 50vw;
+  height: 100%;
+}
+
+.first-text-area{
+  min-width: 410px;
+  margin: 200px 0 0 0;
+  position: absolute;
+  left: 18%;
+}
+
+.text1{
+  font-family: 'GmarketSansBold';
+  font-size: 44px;
+  line-height: 60px;
+}
+
+.text1 span{
+  color: white;
+  background-color: black;
+}
+
+.text2{
+  font-family: 'GmarketSansMedium';
+  font-size: 22px;
+  margin: 44px 0;
+}
+
+.text3{
+  font-family: 'GmarketSansLight';
+  font-size: 15px;
+  color: white;
+  margin: 44px 0;
+}
+
+/* second */
+#second {
+  min-width: 1200px;
+  margin: 200px 0;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.second-area-first{
+  display: inline-block;
+  width: 50vw;
+  height: 100%;
+  /* text-align: center; */
+}
+
+#second video {
+  width: 250px;
+  position: absolute;
+  left: 30%;
+}
+
+.second-area-second{
+  display: inline-block;
+  width: 48vw;
+  height: 100%;
+}
+
+/* third */
+#third {
+  position: relative;
+  overflow: hidden;
+  height: 120vh;
+}
+
+.third-area-first{
+  display: inline-block;
+  width: 50vw;
+  min-width: 760px;
+  background-color: rgba(256,256,256,0.8);
+  z-index: 1;
+}
+
+.third-text-area{
+  min-width: 450px;
+  margin: 200px 0 0 0;
+  position: absolute;
+  left: 18%;
+}
+
+.text4{
+  font-family: 'GmarketSansLight';
+  font-size: 15px;
+  color: #858585;
+  margin: 44px 0;
+}
+
+.third-text-area a{
+  position: absolute;
+}
+
+#third video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+}
+
+/* partner */
+#partner{
+  background-color: #F0B744;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 960px;
+}
+
+.partners{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  margin: 0 0 100px 0;
+}
+
+.parners_text{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'GmarketSansLight';
+  font-size: 27px;
+  margin: 150px 0;
+}
+
+#partner1, #partner4{
+  display:inline-block;
+  margin: 0 20px;
+  width: 220px;
+}
+
+#partner2{
+  display: inline-block;
+  margin: 0 20px;
+  width: 80px;
+}
+
+#partner3{
+  display: inline-block;
+  margin: 0 20px;
+  width: 280px;
+}
+
+/* footer */
+.footer-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 0 0.5px 3px #222;
+  padding: 100px 0;
+}
+
+.footer-container {
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.container-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.container-content {
+  font-family: 'GmarketSansLight';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 40px 0;
+}
+
+.container-copyright {
+  font-family: 'GmarketSansLight';
+  font-size: 14px;
+  margin: 40px 0;
+}
+
+.container-title2 img {
+  width: 80px;
+}
+
+.container-content2 img {
+  width: 25px;
+  margin: 30px 0;
+}
+
+.footer-container a {
+  margin: 0px;
+}
+.sns-logo {
+  width: 20px;
+}

@@ -1,0 +1,367 @@
+@font-face {
+  src: url('../fonts/GmarketSansLight.otf');
+  font-family: 'GmarketSansLight';
+}
+
+@font-face {
+  src: url('../fonts/GmarketSansMedium.otf');
+  font-family: 'GmarketSansMedium';
+}
+
+@font-face {
+  src: url('../fonts/GmarketSansBold.otf');
+  font-family: 'GmarketSansBold';
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'GmarketSansMedium';
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 0 0.5px 3px #999;
+  width: 100%;
+  height: 12vh;
+  min-height: 80px;
+  z-index: 2;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.down {
+  background-color:white;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.navbar>a{
+  position: absolute;
+  left: 20%;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav{
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  right: 20%;
+}
+
+.nav a{
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  color:#777;
+}
+
+.area{
+  position: relative;
+  display: flex;
+  /* justify-content: space-around;
+  align-items: center; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* main */
+#main {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  align-items: center;
+}
+
+#main::before {
+  content: "";
+  background-image: url('../images/간판 로고.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center, 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.main-area-first{
+  display: inline-block;
+  width: 50vw;
+  font-size: 41px;
+  opacity: 1;
+  color: black;
+}
+
+.main-text-area{
+  min-width: 410px;
+  position: absolute;
+  left: 18%;
+}
+
+.main-text-area span{
+  font-family: 'GmarketSansBold';
+  font-weight: bolder;
+}
+
+/* first */
+#first {
+  background-color: #F0B744;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+#first div {
+  width: 100%;
+  min-width: 730px;
+}
+
+.first-title {
+  font-family: 'GmarketSansBold';
+  font-size: 62px;
+}
+
+.first-text {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.first-text span {
+  color: white;
+  background-color: black;
+}
+
+/* second */
+#second {
+  background-color: #F6F5F5;
+}
+
+.second-area-1{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.area1-1{
+  display: inline-block;
+  width: 49vw;
+  height: 100%;
+}
+
+.area1-1 img{
+  width: 600px;
+  position: absolute;
+  top: 100px;
+  left: 18%;
+}
+
+.area1-2{
+  display: inline-block;
+  width: 49vw;
+  height: 100%;
+  position: absolute;
+  top: 400px;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 35px;
+}
+
+.second-area-2{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text2{
+  font-size: 22px;
+}
+
+.title2{
+  font-size: 62px;
+  font-family: 'GmarketSansBold';
+}
+
+.second-area-3{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+
+.second-area-3 p{
+  font-size: 16px;
+  font-family: 'GmarketSansLight';
+  margin-bottom: 20px;
+}
+
+.second-area-3 img{
+  width: 25px;
+  height: 15px;
+}
+
+.second-area-4{
+  position: relative;
+  width: 100vw;
+  text-align: center;
+}
+
+.step{
+  margin: 200px 0;
+}
+
+.step img{
+  display: inline-block;
+  width: 450px;
+  height: 100%;
+  margin: -30px 30px;
+}
+
+.method{
+  display: inline-block;
+  height: 100%;
+  font-size: 20px;
+  font-family: 'GmarketSansLight';
+  line-height: 35px;
+  text-align: justify;
+}
+
+.method-title{
+  font-size: 27px;
+  font-family: 'GmarketSansMedium';
+  margin-bottom: 60px;
+}
+
+.method-comment{
+  font-family: 'GmarketSansLight';
+  font-size: 16px;
+  color: #8D8D8D;
+}
+
+.second-area-5{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+}
+
+.second-area-5 a{
+  position: absolute;
+  left: 40%;
+}
+
+.button-border{
+  display: inline-block;
+  border: none;
+  background-color: none;
+  width: 244px;
+  height: 66px;
+  position: absolute;
+  z-index: 1;
+}
+
+.button-border:hover{
+  display: inline-block;
+  border: 1px solid black;
+  background-color: none;
+  width: 244px;
+  height: 66px;
+  position: absolute;
+  z-index: 1;
+}
+
+.button{
+  display: inline-block;
+  border: none;
+  background-color: #F0B744;
+  width: 244px;
+  height: 66px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: black;
+  text-align: center;
+  font-family: 'GmarketSansBold';
+  font-size: 22px;
+}
+
+/* footer */
+.footer-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 0 0.5px 3px #222;
+  padding: 100px 0;
+}
+
+.footer-container {
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.container-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.container-content {
+  font-family: 'GmarketSansLight';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 40px 0;
+}
+
+.container-copyright {
+  font-family: 'GmarketSansLight';
+  font-size: 14px;
+  margin: 40px 0;
+}
+
+.container-title2 img {
+  width: 80px;
+}
+
+.container-content2 img {
+  width: 25px;
+  margin: 30px 0;
+}
+
+.footer-container a {
+  margin: 0px;
+}
+.sns-logo {
+  width: 20px;
+}
